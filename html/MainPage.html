@@ -6,48 +6,50 @@
     <link rel="stylesheet" href="../css/MainPage.scss"/>
   </head>
   <body >
-    <div id="hat">
-      <ul class="info">
-	<li>
-          <span class="fieldName">Телефон:</span>
+    <div id="banner">
+      <div class="info">
+	<div>
+	  <span class="fieldName">Телефон:</span>
 	  <span class="phone">{phone}</span>
-        </li>
-	<li>
+	</div>
+	<div>
 	  <span class="fieldName">Email:</span>
 	  <span class="dashed">{email}</span>
-	</li>
-      </ul>
-      <p id="titleText">Комментарии</p>      
-      <img class="logo" src="../img/future_logo.png"/>
+	</div>
+      </div>
+      <div id="titleText">Комментарии</div>      
+      <img id="bannerLogo" src="../img/future_logo.png"/>
     </div>
-    <ul id="commentsList">
-      {Comments}
-    </ul>
+    <div id="commentsList">
+      {Comments}      
+    </div>
     <form id="inputForm">
-      <h1>Оставить комментарий</h1>
-      <h2>Ваше имя</h2>
-      <input class="inputName" type="text" value="Пишите ваше имя здесь"></input>
-      <h2>Ваш комментарий</h2>
-      <input class="inputComment" type="text" value="Пишите комментарий здесь"></input>
+      <h3>Оставить комментарий</h1>
+      <h4>Ваше имя</h2>
+      <input class="inputName" type="text" value="Пишите ваше имя здесь">
+        </input>
+      <h4>Ваш комментарий</h2>
+      <input class="inputComment" type="text" value="Пишите комментарий здесь">
+        </input>
       <input class="sendComment" type="submit" value="Отправить"></input>
     </form>
-    <div id="foot">
-      <img class="logo" src="../img/future_logo.png"/>
-      <ul class="info">
-	<li>
-          <span class="fieldName">Телефон:</span>
+    <div id="footer">
+      <img id="footerLogo" src="../img/future_logo.png"/>
+      <div id="footerInfo">
+	<div>
+	  <span class="fieldName">Телефон:</span>
 	  <span class="phone">{phone}</span>
-        </li>
-	<li>
+	</div>
+	<div>
 	  <span class="fieldName">Email:</span>
 	  <span class="dashed">{email}</span>
-	</li>
-	<li>
+	</div>
+	<div>
 	  <span class="fieldName">Адрес:</span>
 	  <span class="dashed">{address}</span>
-	</li>
-	<li class="copyright">2010-2018 Future. Все права защищены</li>
-      </ul>      
+	</div>
+	<div class="copyright">2010-2018 Future. Все права защищены</div>
+      </div>      
     </div>
   </body>
 </html>

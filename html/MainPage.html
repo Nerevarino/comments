@@ -1,55 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html >
   <head >
     <meta charset="utf-8"/>
-    <title > Комментарии  </title>
+    <title>Комментарии</title>
     <link rel="stylesheet" href="../css/MainPage.scss"/>
   </head>
   <body >
     <div id="banner">
-      <div class="info">
-	<div>
-	  <span class="fieldName">Телефон:</span>
-	  <span class="phone">{phone}</span>
-	</div>
-	<div>
-	  <span class="fieldName">Email:</span>
-	  <span class="dashed">{email}</span>
-	</div>
+      <div id="bannerInfo">
+        <p >Телефон: (499) 340-94-71</p>
+	<p ><span >Email:</span><span class="email">info@future-group.ru</span></p>
       </div>
-      <div id="titleText">Комментарии</div>      
+      <div id="titleArea">
+        <p id="titleText">Комментарии</p>
+      </div>
       <img id="bannerLogo" src="../img/future_logo.png"/>
     </div>
-    <div id="commentsList">
-      {Comments}      
+    <div id="activeZone">
+      <div id="commentSection">
+	{Comments}
+      </div>
+      <form id="commentForm">
+        <p id="commentFormInfo">Оставить комментарий</p>
+	<p id="nameTip">Ваше имя</p>
+	<input type="text" id="nameInput"/>
+	<p id="commentTip">Ваш комментарий</p>
+	<input type="text" id="commentInput"/>
+	<input id="sendComment" type="submit" value="Отправить"/>
+      </form>
     </div>
-    <form id="inputForm">
-      <h3>Оставить комментарий</h1>
-      <h4>Ваше имя</h2>
-      <input class="inputName" type="text" value="Пишите ваше имя здесь">
-        </input>
-      <h4>Ваш комментарий</h2>
-      <input class="inputComment" type="text" value="Пишите комментарий здесь">
-        </input>
-      <input class="sendComment" type="submit" value="Отправить"></input>
-    </form>
     <div id="footer">
       <img id="footerLogo" src="../img/future_logo.png"/>
       <div id="footerInfo">
-	<div>
-	  <span class="fieldName">Телефон:</span>
-	  <span class="phone">{phone}</span>
-	</div>
-	<div>
-	  <span class="fieldName">Email:</span>
-	  <span class="dashed">{email}</span>
-	</div>
-	<div>
-	  <span class="fieldName">Адрес:</span>
-	  <span class="dashed">{address}</span>
-	</div>
-	<div class="copyright">2010-2018 Future. Все права защищены</div>
-      </div>      
+        <p >Телефон: (499) 340-94-71</p>
+	<p ><span >Email:</span><span class="email">info@future-group.ru</span></p>
+	<p >Адрес: 115088 Москва, ул. 2-я Машиностроения, д.7 стр.1</p>
+      </div>
+      <p id="copyright">© 2010-2018 Future. Все права защищены</p>      
     </div>
   </body>
 </html>
